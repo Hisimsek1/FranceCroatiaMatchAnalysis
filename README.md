@@ -1,57 +1,59 @@
-# Match Analysis - 2018 Dünya Kupası Finali
+# Match Analysis – 2018 FIFA World Cup Final
 
-Bu projede 2018 FIFA Dünya Kupası finalini (Fransa - Hırvatistan) StatsBomb verisiyle analiz etmeye çalıştım.
-Lisans seviyesinde, üniversite öğrencisi bakışıyla hazırlanmış bir notebook çalışması.
+In this project, I analyzed the 2018 FIFA World Cup Final (France vs. Croatia) using StatsBomb data.
 
-Temel fikir şu: maçı sadece skor üzerinden değil, saha içindeki aksiyon dağılımı üzerinden de okumak.
+This notebook was developed from the perspective of an undergraduate university student and serves as an exploratory match analysis study.
 
-## Projede Neler Var?
+The main idea is to examine the match not only through the final score but also through the distribution of on-field actions and player involvement throughout the game.
 
-- Oyuncu dokunuş yoğunluğu (heatmap)
-- Takım bazlı pas yoğunluğu haritası
-- Takım bazlı şut haritası (gol ve gol olmayan şutlar ayrı)
-- Pas ağı (pass network)
+## Features
 
-Notebook içinde örnek olarak şu oyuncu ve takımlar için görselleştirmeler üretiliyor:
+* Player touch density heatmaps
+* Team-based passing density maps
+* Team-based shot maps (goals and non-goals visualized separately)
+* Pass network analysis
 
-- Paul Pogba (France)
-- Luka Modrić (Croatia)
-- France takım analizi
-- Croatia takım analizi
+The notebook includes visualizations for the following players and teams:
 
-## Kullanılan Kütüphaneler
+* Paul Pogba (France)
+* Luka Modrić (Croatia)
+* France team analysis
+* Croatia team analysis
 
-- numpy
-- pandas
-- matplotlib
-- scipy
-- statsbombpy
-- mplsoccer
+## Libraries Used
 
-## Kurulum
+* numpy
+* pandas
+* matplotlib
+* scipy
+* statsbombpy
+* mplsoccer
 
-1. Python 3.10+ önerilir.
-2. Gerekli paketleri kur:
+## Installation
+
+1. Python 3.10+ is recommended.
+2. Install the required packages:
 
 ```bash
 pip install numpy pandas matplotlib scipy statsbombpy mplsoccer
 ```
 
-## Nasıl Çalıştırılır?
+## How to Run
 
-1. Match_Analysis.ipynb dosyasını aç.
-2. Hücreleri üstten alta doğru sırayla çalıştır.
-3. Veriler çevrim içi çekildiği için internet bağlantısının açık olduğundan emin ol.
+1. Open the `Match_Analysis.ipynb` notebook.
+2. Run the cells sequentially from top to bottom.
+3. Since the data is fetched online, make sure you have an active internet connection.
 
-## Veri Kaynağı
+## Data Source
 
-Bu proje, statsbombpy kütüphanesi üzerinden gelen StatsBomb açık veri setini kullanır.
+This project uses the open StatsBomb dataset accessed through the `statsbombpy` library.
 
-## Not
+## Note
 
-Bu çalışma, lisans düzeyinde bir maç analizi denemesi olarak hazırlandı.
-Amaç ileri seviye model kurmaktan çok, oyunun ritmini ve aksiyon bölgelerini görselleştirerek anlaşılır hale getirmek.
+This study was prepared as an undergraduate-level football match analysis project.
 
-## Lisans
+The goal is not to build advanced predictive models, but rather to make the flow of the game easier to understand through visualizations of action locations, player involvement, and team dynamics.
 
-Bu repo MIT Lisansı ile paylaşılmıştır. Detaylar için LICENSE dosyasına bakabilirsin.
+## License
+
+This repository is distributed under the MIT License.
